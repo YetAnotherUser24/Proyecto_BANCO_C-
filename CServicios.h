@@ -5,6 +5,8 @@ using namespace std;
 
 class Servicios
 {
+class Servicios
+{
 protected:
     int num_tarjeta;
     int año_venci;
@@ -12,6 +14,13 @@ protected:
     int CVV;
 
 public:
+    Servicios(int num_tarjeta, int año_venci, int mes_venci, int CVV)
+    {
+        this->num_tarjeta = num_tarjeta;
+        this->año_venci = año_venci;
+        this->mes_venci = mes_venci;
+        this->CVV = CVV;
+    }
     Servicios(int num_tarjeta, int año_venci, int mes_venci, int CVV)
     {
         this->num_tarjeta = num_tarjeta;

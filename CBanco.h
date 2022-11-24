@@ -1,3 +1,6 @@
+#ifndef __CBANCO_H__
+#define __CBANCO_H__
+
 #include <vector>
 #include "CServicios.h"
 #include "CCliente.h"
@@ -14,3 +17,4 @@ public:
     CServicios *get_tipo_servicio(string _tiposervicio);
     CCliente *get_cliente(string _cliente);
 }
+#endif // __CBANCO_H__

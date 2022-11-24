@@ -1,5 +1,5 @@
-#include "CServicios.h"
+#ifndef __CTARJETADEBITO_H__
+#define __CTARJETADEBITO_H__
 
-class TarjetaDebito:public Servicios{
 
-}
+#endif // __CTARJETADEBITO_H__

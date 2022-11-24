@@ -43,4 +43,5 @@ string CCliente::get_clave()
 
 CServicio *CCliente::get_servicio()
 {
+    return Servicios;
 }

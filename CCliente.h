@@ -6,19 +6,20 @@
 #include <vector>
 
 using namespace std;
-class CCliente{
-    private:
+class CCliente
+{
+private:
     string nombre;
     string apellido;
     string dni;
-    vector<CServicios*> Servicios;
-    
-    public:
-    CCliente(){}
-    CCliente(string _nombre, string _apellido, string _dni);
-    ~CCliente(){}
+    vector<CServicios *> Servicios;
 
-    void add_servicio(CServicio*);
-    void remover_servicio(CServicio*);
+public:
+    CCliente() {}
+    CCliente(string _nombre, string _apellido, string _dni);
+    ~CCliente() {}
+
+    void add_servicio(CServicio *);
+    void remover_servicio(CServicio *);
 };
 #endif // __CCLIENTE_H__

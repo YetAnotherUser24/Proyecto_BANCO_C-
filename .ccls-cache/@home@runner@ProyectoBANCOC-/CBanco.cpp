@@ -127,7 +127,7 @@ void CBanco::EliminarCliente(string _dni) {
     cout << "Cliente borrado exitosamente";
   }
 }
-/*
+
 void CBanco::leer_archivos_clientes() {
   ifstream entrada("clientes.txt");
   string palabra, nombre, dni, e, ocu;
@@ -154,7 +154,7 @@ void CBanco::leer_archivos_clientes() {
   }
   entrada.close();
 }
-*/
+
 void CBanco::leer_archivos_DEMANERAPRO() {
   fstream a_clientes("clientes.txt", ios::in);
   fstream datos_cliente;

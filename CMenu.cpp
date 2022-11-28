@@ -46,8 +46,8 @@ void CMenu::imprimir_menu() {
 }
 
 void CMenu::activar() {
+  banco.leer_archivos_clientes();
   do {
-    //banco.leer_archivos_DEMANERAPRO();
     imprimir_menu();
     cout << "\nOpcion: ";
     cin >> opcion;
@@ -85,23 +85,23 @@ void CMenu::opciones_cliente() {
   switch (Opciones_clie(opcion)) {
   case Opciones_clie::agregar:
     agregar_cliente();
-    cout<<"\nOpcion: ";
+    cout << "\nOpcion: ";
     cin >> opcion;
     break;
   case Opciones_clie::borrar:
     borrar_cliente();
-    cout<<"\nOpcion: ";
+    cout << "\nOpcion: ";
     cin >> opcion;
 
     break;
   case Opciones_clie::buscar:
     buscar_cliente();
-    cout<<"\nOpcion: ";
+    cout << "\nOpcion: ";
     cin >> opcion;
     break;
   case Opciones_clie::ver:
     ver_servis();
-    cout<<"\nOpcion: ";
+    cout << "\nOpcion: ";
     cin >> opcion;
     break;
   }
@@ -112,22 +112,22 @@ void CMenu::opciones_ahorro() {
   switch (Opciones_ahorro(opcion)) {
   case Opciones_ahorro::agregar:
     agregar_servicio_debito();
-    cout<<"\nOpcion: ";
+    cout << "\nOpcion: ";
     cin >> opcion;
     break;
   case Opciones_ahorro::bloquear:
     bloquear_tarjeta();
-    cout<<"\nOpcion: ";
+    cout << "\nOpcion: ";
     cin >> opcion;
     break;
   case Opciones_ahorro::solicitar:
     solicitar_tarjeta_debito();
-    cout<<"\nOpcion: ";
+    cout << "\nOpcion: ";
     cin >> opcion;
     break;
   case Opciones_ahorro::depositar:
     depositar();
-    cout<<"\nOpcion: ";
+    cout << "\nOpcion: ";
     cin >> opcion;
     break;
   }
@@ -138,17 +138,17 @@ void CMenu::opciones_credito() {
   switch (Opciones_credito(opcion)) {
   case Opciones_credito::agregar:
     agregar_servicio_credito();
-    cout<<"\nOpcion: ";
+    cout << "\nOpcion: ";
     cin >> opcion;
     break;
   case Opciones_credito::bloquear:
     bloquear_tarjeta();
-    cout<<"\nOpcion: ";
+    cout << "\nOpcion: ";
     cin >> opcion;
     break;
   case Opciones_credito::solicitar:
     solicitar_tarjeta_credito();
-    cout<<"\nOpcion: ";
+    cout << "\nOpcion: ";
     cin >> opcion;
     break;
   }
@@ -166,7 +166,6 @@ void CMenu::agregar_cliente() {
   cin >> ocu;
   banco.AgregaCliente(new CCliente(nombre, dni, e, ocu));
   cout << "\n1. Regresar al menu principal" << endl;
-  
 }
 
 void CMenu::agregar_servicio_debito() {

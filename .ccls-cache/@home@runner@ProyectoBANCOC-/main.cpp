@@ -1,8 +1,9 @@
 #include <iostream>
-
+#include "CMenu.h"
 using namespace std;
 
 int main() {
-  cout << "Hola wii";
-  return 0;
+    CMenu menu;
+    menu.activar();
+    return 0;
 }
